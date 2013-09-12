@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import edu.cmu.cs.cvaughn.hw1.Base.Annotation_Type;
 
 /** a question to be answered
- * Updated by JCasGen Wed Sep 11 21:49:11 EDT 2013
+ * Updated by JCasGen Wed Sep 11 22:27:25 EDT 2013
  * @generated */
 public class Question_Type extends Annotation_Type {
   /** @generated */

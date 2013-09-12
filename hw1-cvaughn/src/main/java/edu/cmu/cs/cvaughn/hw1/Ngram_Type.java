@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 1, 2, or 3-gram
- * Updated by JCasGen Wed Sep 11 21:49:11 EDT 2013
+ * Updated by JCasGen Wed Sep 11 22:27:25 EDT 2013
  * @generated */
 public class Ngram_Type extends Annotation_Type {
   /** @generated */

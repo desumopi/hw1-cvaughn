@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** Base annotation type for hw1 for software engineering
- * Updated by JCasGen Wed Sep 11 21:49:11 EDT 2013
+ * Updated by JCasGen Wed Sep 11 22:27:25 EDT 2013
  * @generated */
 public class Annotation_Type extends org.apache.uima.jcas.tcas.Annotation_Type {
   /** @generated */

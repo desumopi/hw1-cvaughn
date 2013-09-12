@@ -13,8 +13,8 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import edu.cmu.cs.cvaughn.hw1.Base.Annotation_Type;
 
-/** an answer to the question
- * Updated by JCasGen Wed Sep 11 21:49:11 EDT 2013
+/** a potential answer to the question
+ * Updated by JCasGen Wed Sep 11 22:27:25 EDT 2013
  * @generated */
 public class Answer_Type extends Annotation_Type {
   /** @generated */

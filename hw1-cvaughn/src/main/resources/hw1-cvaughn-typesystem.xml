@@ -112,7 +112,7 @@
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.cs.cvaughn.hw1.Answer</name>
-      <description>an answer to the question</description>
+      <description>a potential answer to the question</description>
       <supertypeName>edu.cmu.cs.cvaughn.hw1.Base.Annotation</supertypeName>
       <features>
         <featureDescription>

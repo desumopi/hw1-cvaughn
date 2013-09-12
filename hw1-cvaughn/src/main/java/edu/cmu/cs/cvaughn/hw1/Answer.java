@@ -12,8 +12,8 @@ import org.apache.uima.jcas.cas.FSList;
 import edu.cmu.cs.cvaughn.hw1.Base.Annotation;
 
 
-/** an answer to the question
- * Updated by JCasGen Wed Sep 11 21:49:11 EDT 2013
+/** a potential answer to the question
+ * Updated by JCasGen Wed Sep 11 22:27:25 EDT 2013
  * XML source: /home/callie/git/hw1-cvaughn/hw1-cvaughn/src/main/resources/hw1-cvaughn-typesystem.xml
  * @generated */
 public class Answer extends Annotation {

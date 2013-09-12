@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** Base annotation type for hw1 for software engineering
- * Updated by JCasGen Wed Sep 11 21:49:11 EDT 2013
+ * Updated by JCasGen Wed Sep 11 22:27:25 EDT 2013
  * XML source: /home/callie/git/hw1-cvaughn/hw1-cvaughn/src/main/resources/hw1-cvaughn-typesystem.xml
  * @generated */
 public class Annotation extends org.apache.uima.jcas.tcas.Annotation {

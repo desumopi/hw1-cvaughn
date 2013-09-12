@@ -12,7 +12,7 @@ import org.apache.uima.jcas.cas.StringArray;
 
 
 /** 1, 2, or 3-gram
- * Updated by JCasGen Wed Sep 11 21:49:11 EDT 2013
+ * Updated by JCasGen Wed Sep 11 22:27:25 EDT 2013
  * XML source: /home/callie/git/hw1-cvaughn/hw1-cvaughn/src/main/resources/hw1-cvaughn-typesystem.xml
  * @generated */
 public class Ngram extends Annotation {
