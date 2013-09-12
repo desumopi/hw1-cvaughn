@@ -26,9 +26,118 @@
 	<vendor>Callie Vaughn</vendor>
   <types>
 		<typeDescription>
-      <name>edu.cmu.cs.cvaughn.hw1.base.annotation</name>
+      <name>edu.cmu.cs.cvaughn.hw1.Base.Annotation</name>
       <description>Base annotation type for hw1 for software engineering</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>source</name>
+          <description>source of object</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>confidence</name>
+          <description>system's confidence in object</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>edu.cmu.cs.cvaughn.hw1.Token</name>
+      <description>token, bounded by space and/or punctuation</description>
+      <supertypeName>edu.cmu.cs.cvaughn.hw1.Base.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>beginning</name>
+          <description>Marks first index of the token</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>ending</name>
+          <description>Marks ending index of the token</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>content</name>
+          <description>String content of the token</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>edu.cmu.cs.cvaughn.hw1.Ngram</name>
+      <description>1, 2, or 3-gram</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>beginnning</name>
+          <description>Marks beginning index of N-gram</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>ending</name>
+          <description>Marks ending index of the N-gram</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>content</name>
+          <description>String content of the N-gram -- each String in the array is one gram in the N-gram</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>n</name>
+          <description>The length (n) of the N-gram</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>edu.cmu.cs.cvaughn.hw1.Question</name>
+      <description>a question to be answered</description>
+      <supertypeName>edu.cmu.cs.cvaughn.hw1.Base.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>tokenContent</name>
+          <description>the content of the question in Tokens</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>edu.cmu.cs.cvaughn.hw1.Token</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>ngramContent</name>
+          <description>the content of the question in N-grams</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>edu.cmu.cs.cvaughn.hw1.Ngram</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>edu.cmu.cs.cvaughn.hw1.Answer</name>
+      <description>an answer to the question</description>
+      <supertypeName>edu.cmu.cs.cvaughn.hw1.Base.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>tokenContent</name>
+          <description>the content of the answer in Tokens</description>
+          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>edu.cmu.cs.cvaughn.hw1.Token</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>ngramContent</name>
+          <description>the content of the answer in N-grams</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>edu.cmu.cs.cvaughn.hw1.Ngram</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>score</name>
+          <description>the score of the answer</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>isRight</name>
+          <description>true if the answer is right, false if the answer is wrong</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
   </types>
 </typeSystemDescription>
